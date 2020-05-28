@@ -445,7 +445,7 @@ export let filter_empty=function(value){
 }
 ```
 
-#### 难证图片尺寸是否在规则之中
+#### 验证图片尺寸是否在规则之中
 ```
 function makeRatio(value){
 	var _r = value.toString();
@@ -477,22 +477,6 @@ export let img_ratio=function(value,attrvalue){
 	return k.length==value.length
 }
 
-```
-
-#### ????
-```
-export let _url =function(value,attrValue){
-
-	if(!value) return true
-
-	if(value.length<=0) return true;
-
-	let reg = /^http(s)?:\/\/.{3,}/
-
-	return reg.test(value)
-
-
-}
 ```
 
 #### 验证字符串是否全部是空格
